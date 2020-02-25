@@ -84,7 +84,6 @@ export default class Row extends Component {
     onPanResponderMove: (e, gestureState) => {
       if (
         !this._active ||
-        gestureState.numberActiveTouches > 1 ||
         e.nativeEvent.target !== this._target
       ) {
         if (!this._isTouchInsideElement(e)) {
